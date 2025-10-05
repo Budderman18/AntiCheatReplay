@@ -118,8 +118,6 @@ public class AntiCheatReplay extends JavaPlugin {
 
         initIntaveConfigSettings();
 
-        initGrimConfigSettings();
-
         getConfig().options().copyDefaults(true);
         saveConfig();
 
@@ -298,13 +296,6 @@ public class AntiCheatReplay extends JavaPlugin {
         list.add("ban");
         list.add("kick");
         getConfig().addDefault("Intave.Punish-Commands", list);
-    }
-
-    private void initGrimConfigSettings() {
-        List<String> list = new ArrayList<>();
-        list.add("kick");
-        list.add("ban");
-        getConfig().addDefault("Grim.Punish-Commands", list);
     }
 
     private void initGeneralConfigSettings() {
